@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <color name="divider">#B6B6B6</color>
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#727272</color>
+
+  <color name="white">#ffffff</color>
+  <color name="black">#000000</color>
+  <color name="gray_dark">#616161</color>
+  <color name="gray_light">#9e9e9e</color>
+  <color name="red">#dd191d</color>
+
+  <color name="table_area_bg">#bdbdbd</color>
+  <color name="table_occupy_bg">#ffc107</color>
+  <color name="cash_bill_bg">#03a9f4</color>
+
+  <!--空桌item普通状态-->
+  <color name="item_empty_table_container_status_normal">#26c6da</color>
+  <color name="item_empty_table_content_status_normal">#00acc1</color>
+  <!--占用桌item普通状态-->
+  <color name="item_occupy_table_container_status_normal">#ff7043</color>
+  <color name="item_occupy_table_content_status_normal">#f4511e</color>
+  <!--零售单item普通状态-->
+  <color name="item_retail_container_status_normal">#26c6da</color>
+  <color name="item_retail_content_status_normal">#00acc1</color>
+  <!--桌台 零售单 item选中状态-->
+  <color name="item_sel_table_container_status_normal">#8d6e63</color>
+  <color name="item_sel_table_content_status_normal">#6d4c41</color>
+
+  <color name="md_cyan_200">#80deea</color>
+  <color name="md_cyan_300">#4dd0e1</color>
+
+  <color name="md_light_blue_300">#4fc3f7</color>
+  <color name="md_light_blue_400">#29b6f6</color>
+
+  <!--商品Item点菜数量-->
+  <color name="item_prod_num">#FFFFFF</color>
+  <!--分类字体颜色 选中-->
+  <color name="item_cate_text_color_selected">#285B41</color>
+  <!--分类字体颜色 未选中-->
+  <color name="item_cate_text_color_unselected">#808274</color>
+  <!--商品item普通状态-->
+  <color name="item_prod_container_status_normal">#26c6da</color>
+  <color name="item_prod_content_status_normal">#00acc1</color>
+  <color name="menu_cate_item">#09A894</color>
+</resources>

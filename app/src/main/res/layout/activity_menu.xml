@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <include
+      layout="@layout/cash_bill"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="30" />
+
+  <TextView style="@style/DividerLineGrayVerticalHalf" />
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="70"
+      android:layout_marginLeft="10dp"
+      android:padding="10dp"
+      android:background="@color/white"
+      android:orientation="horizontal">
+
+    <!--菜单-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="85">
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rcv_menu"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:background="@color/white"
+          android:scrollbars="none" />
+    </LinearLayout>
+
+    <TextView style="@style/DividerLineGrayVerticalHalf" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_weight="15"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/pro_search"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="20dp"
+          android:background="@drawable/selector_menu_search_btn"
+          android:drawableLeft="@mipmap/ic_menu_search"
+          android:gravity="center"
+          android:minHeight="?android:attr/listPreferredItemHeightSmall"
+          android:text="搜索"
+          android:textSize="15sp" />
+
+      <TextView style="@style/DividerLineBlackHalf" />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rcv_cate"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/pro_search"
+          android:layout_marginLeft="10dp" />
+
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+</LinearLayout>

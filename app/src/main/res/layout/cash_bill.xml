@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:id="@+id/rl_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:background="@color/cash_bill_bg">
+
+    <TextView
+        android:id="@+id/tv_cash_bill_table_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一号桌"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_font_size_big" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/tv_cash_bill_table_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_up_arrow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_cash_bill_table_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cash_bill_table_name"
+        android:layout_toRightOf="@+id/iv_back"
+        android:text="大厅"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_font_size_big" />
+  </RelativeLayout>
+
+  <LinearLayout
+      android:id="@+id/ll_set"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:background="@color/cash_bill_bg"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_people_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="人数:0/0"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_order_info_start_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="服务员:admin"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/im_waiter_choice"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@mipmap/ic_down_arrow" />
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divider" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="5"
+        android:gravity="center|end"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:text="附加费￥0.00" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="优惠￥0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="商品数量0" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="应收￥0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+      <Button
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_weight="1"
+          android:background="@drawable/selector_take_food_btn"
+          android:text="结账"
+          android:textColor="@color/white" />
+
+      <Button
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_weight="1"
+          android:background="@drawable/selector_take_food_btn"
+          android:text="点单"
+          android:textColor="@color/white" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

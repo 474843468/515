@@ -1,0 +1,82 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme"
+      parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <!--通用 Base-->
+  <style name="MatchWidthAndMatchHeight">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="MatchWidthAndWrapHeight">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="WrapWidthAndWrapHeight">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="WrapWidthAndMatchHeight">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <!--通用 TableTypeAdapter 餐桌分类 item-->
+  <style name="ItemTableTypeStyle"
+      parent="@style/WrapWidthAndWrapHeight">
+    <item name="android:background">@drawable/selector_tv_table_type</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>
+    <item name="android:textColor">@color/bill_cate_item_textcolor</item>
+    <item name="android:textSize">@dimen/text_font_size_small</item>
+  </style>
+
+  <style name="ProdTypeHintIvStyle">
+    <item name="android:layout_width">15dp</item>
+    <item name="android:layout_height">15dp</item>
+    <item name="android:layout_marginRight">5dp</item>
+  </style>
+
+  <style name="TableMoreFunctionHintIvStyle">
+    <item name="android:layout_width">28dp</item>
+    <item name="android:layout_height">28dp</item>
+    <item name="android:layout_marginRight">8dp</item>
+  </style>
+
+  <style name="DividerLineBlackVerticalHalf">
+    <item name="android:layout_width">0.5dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@color/black</item>
+  </style>
+  <style name="DividerLineGrayVerticalHalf">
+    <item name="android:layout_width">0.5dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@color/gray_light</item>
+  </style>
+
+  <!--通用 分割线-->
+  <style name="DividerLineBlack">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/black</item>
+  </style>
+
+  <style name="DividerLineBlackHalf">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">0.5dp</item>
+    <item name="android:background">@color/black</item>
+  </style>
+
+
+</resources>
